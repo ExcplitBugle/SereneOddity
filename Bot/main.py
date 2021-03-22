@@ -21,4 +21,5 @@ class Bot(commands.Bot):
         print("Logged in!")
 
 bot = Bot()
+bot.load_extension('exts.fun.fun')
 bot.run(Tokens.BOT_TOKEN)
