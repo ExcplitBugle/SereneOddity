@@ -3,7 +3,7 @@ from discord import Colour
 
 from dotenv import load_dotenv
 
-class Logins:
+class Tokens:
     load_dotenv()
 
     BOT_TOKEN = getenv("BOT_TOKEN")
