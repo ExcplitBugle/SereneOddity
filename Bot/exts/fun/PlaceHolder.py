@@ -16,6 +16,6 @@ class TextConverters(commands.Cog):
         else:
             try:
                 await ctx.author.send(newText)
-                await ctx.send(f"**{ctx.author.mention} The output too was too large, so I sent it to your DMs! :mailbox_with_mail:**")
+                await ctx.send(f"{ctx.author.mention} The output was very large so I sent It to your dms!")
             except Exception:
-                await ctx.send(f"**{ctx.author.mention} There was a problem, and I could not send the output. It may be too large or malformed**")
+                await ctx.send(f"{ctx.author.mention} Seem's like there was a problem with your input!")
