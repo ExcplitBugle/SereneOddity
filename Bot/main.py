@@ -17,9 +17,12 @@ class Bot(commands.Bot):
 
         super().__init__(command_prefix="?", intents=intents)
 
+    def run(self) -> None:
+        super().run(Tokens.BOT_TOKEN)
+
     async def on_ready(self):
         print("Logged in!")
 
 bot = Bot()
 bot.load_extension('exts.fun.fun')
-bot.run(Tokens.BOT_TOKEN)
+bot.run()

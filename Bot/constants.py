@@ -1,6 +1,5 @@
 from os import getenv
 from discord import Colour
-
 from dotenv import load_dotenv
 
 class Tokens:
@@ -8,3 +7,4 @@ class Tokens:
 
     BOT_TOKEN = getenv("BOT_TOKEN")
     #Adding DB INFO Later!
+
